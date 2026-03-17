@@ -24,7 +24,7 @@ useEffect(() => {
 
 
   return (
-    <header className={`fixed top-0 left-0 right-0  ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"} transition-all z-50`}>
+    <header className={`fixed top-0 left-0 right-0 duration-500 ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"} transition-all z-50`}>
       <nav className="container mx-auto px-6 flex items-center justify-between ">
         <a
           href="#"
@@ -70,12 +70,15 @@ useEffect(() => {
               <a
                 href={link.href}
                 key={index}
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="text-lg text-muted-foreground hover:text-foreground  py-2"
               >
                 {link.label}
               </a>
             ))}
-            <Button size="sm">Contact ME</Button>
+            <Button onClick={() => setIsMobileMenuOpen(false)} size="sm">
+              Contact ME
+            </Button>
           </div>
         </div>
       )}

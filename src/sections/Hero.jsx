@@ -1,5 +1,12 @@
 import { Button } from "@/components/Button";
-import { ArrowRight, Download, Github, Linkedin, Twitter , ChevronDown } from "lucide-react";
+import {
+  ArrowRight,
+  Download,
+  Github,
+  Linkedin,
+  Twitter,
+  ChevronDown,
+} from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
@@ -79,11 +86,21 @@ export const Hero = () => {
             </div>
 
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
+              <Button
+                size="lg"
+                onClick={() => {
+                  const el = document.getElementById("contact");
+                  if (el) {
+                    const y =
+                      el.getBoundingClientRect().top + window.scrollY - 80;
+                    window.scrollTo({ top: y, behavior: "smooth" });
+                  }
+                }}
+              >
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
               <AnimatedBorderButton>
-                 <Download className="w-5 h-5" /> Download CV 
+                <Download className="w-5 h-5" /> Download CV
               </AnimatedBorderButton>
             </div>
 

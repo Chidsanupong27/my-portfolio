@@ -22,7 +22,7 @@ export const Navbar = () => {
   }, []);
 
   const contactSection = document.getElementById("contact");
-console.log(contactSection);
+  console.log(contactSection);
 
   return (
     <header
@@ -52,9 +52,19 @@ console.log(contactSection);
         </div>
 
         {/* CTA Button */}
-
         <div className="hidden md:block">
-          <Button size="sm">Contact ME</Button>
+          <Button
+            size="sm"
+            onClick={() => {
+              const el = document.getElementById("contact");
+              if (el) {
+                const y = el.getBoundingClientRect().top + window.scrollY - 80;
+                window.scrollTo({ top: y, behavior: "smooth" });
+              }
+            }}
+          >
+            Contact ME
+          </Button>
         </div>
 
         {/* Mobile Menu Button  */}

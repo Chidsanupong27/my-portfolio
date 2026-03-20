@@ -1,5 +1,5 @@
 import { Button } from "../components/Button";
-import { Menu, X} from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const navLinks = [
@@ -13,18 +13,21 @@ export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
-useEffect(() => {
-  const handleScroll = () => {
-    setIsScrolled(window.scrollY > 50);
-  };
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, [])
-
+  const contactSection = document.getElementById("contact");
+console.log(contactSection);
 
   return (
-    <header className={`fixed top-0 left-0 right-0 duration-500 ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"} transition-all z-50`}>
+    <header
+      className={`fixed top-0 left-0 right-0 duration-500 ${isScrolled ? "glass-strong py-3" : "bg-transparent py-5"} transition-all z-50`}
+    >
       <nav className="container mx-auto px-6 flex items-center justify-between ">
         <a
           href="#"
@@ -55,9 +58,11 @@ useEffect(() => {
         </div>
 
         {/* Mobile Menu Button  */}
-        <button className="md:hidden p-2 text-foreground cursor-pointer"
-         onClick={()=> setIsMobileMenuOpen((prev) => !prev)}>
-           {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        <button
+          className="md:hidden p-2 text-foreground cursor-pointer"
+          onClick={() => setIsMobileMenuOpen((prev) => !prev)}
+        >
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </nav>
 
@@ -76,8 +81,10 @@ useEffect(() => {
                 {link.label}
               </a>
             ))}
-            <Button onClick={() => setIsMobileMenuOpen(false)} size="sm">
-              Contact ME
+            <Button asChild size="sm">
+              <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+                Contact ME
+              </a>
             </Button>
           </div>
         </div>

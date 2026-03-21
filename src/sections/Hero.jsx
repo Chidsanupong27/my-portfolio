@@ -6,7 +6,9 @@ import {
   Linkedin,
   Twitter,
   ChevronDown,
+  Facebook,
 } from "lucide-react";
+import { SiLine } from "react-icons/si";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
@@ -107,9 +109,9 @@ export const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me:</span>
               {[
-                { icon: Github, href: "https://github.com" },
-                { icon: Linkedin, href: "https://linkedin.com" },
-                { icon: Twitter, href: "https://twitter.com" },
+                { icon: Github, href: "https://github.com/Chidsanupong27" },
+                { icon: Facebook, href: "https://www.facebook.com/chidsanupong.polsri/" },
+                { icon: SiLine, href: "https://line.me/ti/p/xphf-GwSaZ" },
               ].map((social, idx) => (
                 <a
                   key={idx}

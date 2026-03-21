@@ -13,7 +13,7 @@ const testimonials = [
     quote:
       "Designed user-friendly mobile application interfaces at Siam Kubota, focusing on usability and real user needs.",
     author: "Siam Kubota",
-    role: "UX/UI Designer",
+    role: "Digital Executive , UX/UI ",
     avatar: "/projects/logo-kubota.png",
   },
   {
@@ -38,7 +38,7 @@ export const Testimonials = () => {
     );
   };
   return (
-    <section id="testimonials" className="py-32 relative overflow-hidden">
+    <section id="Journey" className="py-32 relative overflow-hidden">
       <div className="absolute top-1/2 left-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
       <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}

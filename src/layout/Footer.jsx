@@ -1,9 +1,11 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Github, Linkedin, Twitter } from "lucide-react";
+import { SiLine } from "react-icons/si";
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  
+  { icon: Github, href: "https://github.com/Chidsanupong27", label:"GitHub" },
+  { icon: Facebook, href: "https://www.facebook.com/chidsanupong.polsri/", label:"Facebook" },
+  { icon: SiLine, href: "https://line.me/ti/p/xphf-GwSaZ", label:"Line" },
 ];
 
 const footerLinks = [
@@ -20,7 +22,6 @@ export const Footer = () => {
     <footer className="py-12 border-t border-border">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-
           {/* Left: Logo + Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="text-xl font-bold tracking-tight">
@@ -59,7 +60,6 @@ export const Footer = () => {
               </a>
             ))}
           </div>
-
         </div>
       </div>
     </footer>

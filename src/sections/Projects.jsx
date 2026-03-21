@@ -48,7 +48,7 @@ const projects = [
       "Developed a mobile application for tracking income and expenses, helping users manage their finances more effectively. Focused on creating a simple and intuitive user experience with real-time data handling.",
     image: "/projects/Project4.png",
     video: "/videos/expence-preview.mp4",
-    tags: ["React Native", "Firebase", "Figma"],
+    tags: ["React Native", "Firebase", "Figma","Expo GO","Expo.dev"],
     link: "#projects",
     github: "#projects",
   },
@@ -57,8 +57,28 @@ const projects = [
     description:
       "Designed a web-based business management platform similar to a POS system, aimed at helping entrepreneurs manage and grow their businesses more efficiently.",
     image: "/projects/Project5.png",
-    video: "/videos/quad-preview.mp4",
+    video: "/videos/quad1-preview.mp4",
     tags: ["Figma"],
+    link: "#projects",
+    github: "#projects",
+  },
+    {
+    title: "Print System",
+    description:
+      "Designed a web-based business management platform similar to a POS system, aimed at helping entrepreneurs manage and grow their businesses more efficiently.",
+    image: "/projects/Project7.png",
+    video: "/videos/print-preview.mp4",
+    tags: ["Figma"],
+    link: "#projects",
+    github: "#projects",
+  },
+    {
+    title: "Human Fall Detaction",
+    description:
+      "Designed a web-based business management platform similar to a POS system, aimed at helping entrepreneurs manage and grow their businesses more efficiently.",
+    image: "/projects/Project8.png",
+    video: "",
+    tags: ["YOLOv8","Colab" ,"Roboflow"],
     link: "#projects",
     github: "#projects",
   },

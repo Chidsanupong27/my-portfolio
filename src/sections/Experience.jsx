@@ -10,7 +10,7 @@ const experiences = [
   },
   {
     period: "Apr 2025 – May 2025",
-    role: "Digital Executive (Intern)",
+    role: "Technology innovation Executive (Intern)",
     company: "Siam Kubota Corporation Co., Ltd.",
     description:
       "Designed user-centric mobile application interfaces related to construction machinery. Conducted user research, created interactive prototypes using Figma, and collaborated with development teams to improve usability and user experience.",

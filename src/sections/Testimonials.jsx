@@ -13,7 +13,7 @@ const testimonials = [
     quote:
       "Designed user-friendly mobile application interfaces at Siam Kubota, focusing on usability and real user needs.",
     author: "Siam Kubota",
-    role: "Digital Executive , UX/UI ",
+    role: "Technology innovation Executive , UX/UI ",
     avatar: "/projects/logo-kubota.png",
   },
   {

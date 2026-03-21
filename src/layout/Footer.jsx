@@ -25,7 +25,7 @@ export const Footer = () => {
           {/* Left: Logo + Copyright */}
           <div className="text-center md:text-left">
             <a href="#" className="text-xl font-bold tracking-tight">
-              TOP<span className="text-primary">PO</span>
+              CHIDSA<span className="text-primary">NUPONG</span>
             </a>
             <p className="text-sm text-muted-foreground mt-2">
               © {currentYear} Chidsanupong Polsri. All rights reserved.

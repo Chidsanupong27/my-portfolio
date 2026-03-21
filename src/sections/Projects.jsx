@@ -38,7 +38,7 @@ const projects = [
     description:
       "Designed and developed a restaurant management system to handle table reservations, menu management, and user accounts. Focused on creating a clean and user-friendly interface while implementing core system functionalities.",
     image: "/projects/Project3.png",
-    tags: ["HTML", "CSS", "JavaScript", "Figma"],
+    tags: ["HTML", "CSS", "JavaScript", "Figma", "PHP"],
     link: "#projects",
     github: "https://github.com/FightFK/4Shabu-Web",
   },
@@ -48,7 +48,7 @@ const projects = [
       "Developed a mobile application for tracking income and expenses, helping users manage their finances more effectively. Focused on creating a simple and intuitive user experience with real-time data handling.",
     image: "/projects/Project4.png",
     video: "/videos/expence-preview.mp4",
-    tags: ["React Native", "Firebase", "Figma","Expo GO","Expo.dev"],
+    tags: ["React Native", "Firebase", "Figma", "Expo GO", "Expo.dev"],
     link: "#projects",
     github: "#projects",
   },
@@ -62,23 +62,23 @@ const projects = [
     link: "#projects",
     github: "#projects",
   },
-    {
-    title: "Print System",
+  {
+    title: "Print Exam System",
     description:
-      "Designed a web-based business management platform similar to a POS system, aimed at helping entrepreneurs manage and grow their businesses more efficiently.",
+      "Developed a web-based print management system designed for generating and printing exam documents efficiently. The system allows users to organize content, preview layouts, and produce formatted outputs for printing. Focused on usability, accuracy, and streamlined workflow to support real-world usage scenarios.",
     image: "/projects/Project7.png",
     video: "/videos/print-preview.mp4",
-    tags: ["Figma"],
+    tags: ["Figma", "JavaScript", "Next.js"],
     link: "#projects",
     github: "#projects",
   },
-    {
+  {
     title: "Human Fall Detaction",
     description:
-      "Designed a web-based business management platform similar to a POS system, aimed at helping entrepreneurs manage and grow their businesses more efficiently.",
+      "Developed a human fall detection system using YOLOv8 for real-time object detection. Trained and tested the model on custom datasets using Roboflow, and implemented the system in Google Colab for rapid prototyping. The project focuses on enhancing safety by detecting fall events, which can be applied in elderly care and monitoring systems.",
     image: "/projects/Project8.png",
     video: "",
-    tags: ["YOLOv8","Colab" ,"Roboflow"],
+    tags: ["YOLOv8", "Colab", "Roboflow"],
     link: "#projects",
     github: "#projects",
   },

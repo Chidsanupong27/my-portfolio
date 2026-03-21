@@ -15,15 +15,13 @@ const skills = [
   "JavaScript",
   "React",
   "Node.js",
-  "TypeScript",
   "Python",
-  "Django",
-  "GraphQL",
   "Docker",
   "AWS",
   "Git",
   "SQL",
   "Figma",
+  "PHP",
   "Tailwind CSS",
 ];
 
@@ -65,7 +63,7 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Software Engineer
+                System & Product Builder
               </span>
             </div>
 
@@ -81,9 +79,10 @@ export const Hero = () => {
               </h1>
 
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                I'm a software engineer specializing in building exceptional
-                digital experiences. Currently, I'm focused on developing
-                responsive web applications that solve real-world problems.
+                I build digital solutions by combining development, user
+                experience, and system analysis. I focus on creating responsive
+                web applications while understanding user needs and business
+                processes to deliver impactful, real-world solutions.
               </p>
             </div>
 
@@ -101,16 +100,26 @@ export const Hero = () => {
               >
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" /> Download CV
-              </AnimatedBorderButton>
+
+              <a
+                href="/resume-test.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5" /> Download CV
+                </AnimatedBorderButton>
+              </a>
             </div>
 
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me:</span>
               {[
                 { icon: Github, href: "https://github.com/Chidsanupong27" },
-                { icon: Facebook, href: "https://www.facebook.com/chidsanupong.polsri/" },
+                {
+                  icon: Facebook,
+                  href: "https://www.facebook.com/chidsanupong.polsri/",
+                },
                 { icon: SiLine, href: "https://line.me/ti/p/xphf-GwSaZ" },
               ].map((social, idx) => (
                 <a
@@ -154,7 +163,7 @@ export const Hero = () => {
 
                 {/* Stats Badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">5+ </div>
+                  <div className="text-2xl font-bold text-primary">10+ </div>
                   <div className="text-xs text-muted-foreground">Projects</div>
                 </div>
               </div>

@@ -38,9 +38,10 @@ export const Experience = () => {
             </span>
           </h2>
           <p className="text-muted-foreground animate-fade-in animation-delay-200">
-            A timeline of my professional journey, from UX/UI design to
-            full-stack development, gaining hands-on experience in building
-            real-world applications and solving practical problems.
+            A timeline of my journey in technology, from UX/UI design to
+            full-stack development, along with experience in analyzing user
+            needs, business processes, and building systems that solve
+            real-world problems.
           </p>
         </div>
 
@@ -58,7 +59,9 @@ export const Experience = () => {
               >
                 {/* Timeline Dot */}
                 <div className="absolute left-0 md:left-1/2 top-0 w-3 h-3 bg-primary rounded-full -translate-x-1/2 ring-4 ring-background z-10">
-                {exp.current && <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-75"/>}
+                  {exp.current && (
+                    <span className="absolute inset-0 rounded-full bg-primary animate-ping opacity-75" />
+                  )}
                 </div>
 
                 {/* content */}
@@ -84,7 +87,12 @@ export const Experience = () => {
                       }`}
                     >
                       {exp.technologies.map((tech, techIdx) => (
-                        <span className="px-3 py-1 bg-surface text-xs rounded-full text-muted-foreground "key={techIdx}>{tech}</span>
+                        <span
+                          className="px-3 py-1 bg-surface text-xs rounded-full text-muted-foreground "
+                          key={techIdx}
+                        >
+                          {tech}
+                        </span>
                       ))}
                     </div>
                   </div>

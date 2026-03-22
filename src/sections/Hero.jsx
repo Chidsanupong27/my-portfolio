@@ -102,7 +102,7 @@ export const Hero = () => {
               </Button>
 
               <a
-                href="/resume-test.pdf"
+                href="/resume-top.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >

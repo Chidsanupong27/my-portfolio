@@ -9,7 +9,7 @@ const projects = [
       "Designed and prototyped a user-centric mobile application for excavator products at SIAM KUBOTA, focusing on intuitive UI/UX and enhancing customer engagement. Also developed a lightweight web system using Google Apps Script to collect and manage customer interest data.",
     image: "/projects/Project1.png",
     video: "/videos/Kud-preview.mp4",
-    tags: ["Figma", "UX/UI", "JavaScript", "Google Apps Script"],
+    tags: ["Figma", "UX/UI", "JavaScript", "Google Apps Script","User Flow", "Wireframing"],
     link: "#projects",
     github: "#projects",
   },
